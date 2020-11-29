@@ -7,5 +7,13 @@ pipeline {
       }
     }
 
+    stage('Test') {
+      steps {
+        sh '''cd simple-java-maven-app_master
+
+mvn test'''
+      }
+    }
+
   }
 }
