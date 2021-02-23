@@ -19,6 +19,11 @@ To run the app locally:
 ```mvn -B -DskipTests clean package```
 - Test
 ```mvn test```
- - Run
+- Run
 ```java -jar target/my-app-1.0-SNAPSHOT.jar```
 
+To run the app in container:
+- Build
+```docker build -t simple-maven-app .```
+- Run
+```docker run --rm simple-maven-app```
